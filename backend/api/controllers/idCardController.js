@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 
 // Asset paths
 const logoPath = path.join(__dirname, '../assets/smit-logo.png');
-// const defaultPhotoPath = path.join(__dirname, '../assets/default-photo.png');
+
 
 const generateIDCardPDF = async (user) => {
     return new Promise(async (resolve, reject) => {
@@ -60,13 +60,13 @@ const sendIDCardEmail = async (user, pdfBuffer) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'hafizahmedraza12345@gmail.com',
-            pass: 'rnua cflk wrgc phft'
+            user: 'rasheedahmed4845@gmail.com',
+            pass: 'gioe svtd gprh yqrq'
         }
     });
 
     const mailOptions = {
-        from: 'Saylani SMIT <hafizahmedraza12345@gmail.com>',
+        from: 'Rashed Ahmed <rasheedahmed4845@gmail.com>',
         to: user.email,
         subject: 'Your Saylani ID Card',
         text: `Dear ${user.fullName},\n\nAttached is your official SMIT ID card.\n\nRegards,\nSaylani Team`,
