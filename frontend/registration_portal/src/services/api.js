@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'https://ai-hackathon-backend.vercel.app/', // ✅ Port 5000 = your Express backend
+    baseURL: 'https://smit-hackathon-backend-20.vercel.app/api/users/', // ✅ Port 5000 = your Express backend
 });
 
 // POST request to register user
