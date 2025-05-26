@@ -60,13 +60,13 @@ const sendIDCardEmail = async (user, pdfBuffer) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'rasheedahmed4845@gmail.com',
-            pass: 'gioe svtd gprh yqrq'
+            user: 'hafizahmedraza12345@gmail.com',
+            pass: 'rnua cflk wrgc phft'
         }
     });
 
     const mailOptions = {
-        from: 'Rashed Ahmed <rasheedahmed4845@gmail.com>',
+        from: 'Ahmed Raza <hafizahmedraza12345@gmail.com>',
         to: user.email,
         subject: 'Your Saylani ID Card',
         text: `Dear ${user.fullName},\n\nAttached is your official SMIT ID card.\n\nRegards,\nSaylani Team`,
